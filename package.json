@@ -1,0 +1,24 @@
+{
+  "name": "manage-db",
+  "version": "0.0.1",
+  "description": "Manage databases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxmalov/node-manage-db.git"
+  },
+  "keywords": [
+    "database",
+    "postgres",
+    "mysql"
+  ],
+  "author": "Maxim Malov <m.malov.v@gmail.com>",
+  "license": "The MIT License (MIT)",
+  "bugs": {
+    "url": "https://github.com/maxmalov/node-manage-db/issues"
+  },
+  "homepage": "https://github.com/maxmalov/node-manage-db"
+}
