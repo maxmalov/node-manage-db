@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/maxmalov/node-manage-db/issues"
   },
-  "homepage": "https://github.com/maxmalov/node-manage-db"
+  "homepage": "https://github.com/maxmalov/node-manage-db",
+  "devDependencies": {
+    "gulp": "^3.8.9",
+    "gulp-jshint": "^1.8.5",
+    "jshint-stylish": "^1.0.0"
+  }
 }
