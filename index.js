@@ -1,10 +1,16 @@
 'use strict';
 
-module.exports = function (dialect, opts) {
+module.exports = function (opts) {
+  var dialect = opts && opts.dialect || 'postgres';
+  var provider;
+
   switch(dialect) {
     case 'postgres':
-      return require('./lib/postgres')(opts);
+      provider = require('./lib/postgres');
+      break;
     default:
       throw new Error('Dialect: ' + dialect + ' is not supported for now. Sorry ;(');
   }
+
+  return provider(opts);
 };
