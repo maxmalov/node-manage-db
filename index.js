@@ -8,6 +8,9 @@ module.exports = function (opts) {
     case 'postgres':
       provider = require('./lib/postgres');
       break;
+    case 'mysql':
+      provider = require('./lib/mysql');
+      break;
     default:
       throw new Error('Dialect: ' + dialect + ' is not supported for now. Sorry ;(');
   }
