@@ -1,11 +1,8 @@
 {
-  "name": "manage-db",
-  "version": "0.0.1",
+  "name": "manage-database",
+  "version": "0.1.0",
   "description": "Manage databases",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/maxmalov/node-manage-db.git"
