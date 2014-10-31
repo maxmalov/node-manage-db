@@ -3,7 +3,7 @@
 var join = require('path').join;
 
 module.exports = function (opts) {
-  var dialect = opts && opts.dialect || 'postgres';
+  var dialect = opts && opts.dialect || 'mysql';
   var provider;
 
   try {
