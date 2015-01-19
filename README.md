@@ -23,10 +23,22 @@ var dbManager = dbManagerProvider({
 });
 
 // create database
-dbMgr.create('database_name');
+dbMgr.create('database_name', function (err) {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('database created');
+});
 
 // drop database
-dbMgr.drop('database_name');
+dbMgr.drop('database_name', function (err) {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('database deleted');
+});
 ```
 
 ### Options
