@@ -12,9 +12,9 @@ npm i manage-database
 Module exports a provider function for database manager.
 
 ```
-var dbManagerProvider = require('manage-database');
+var createDbManager = require('manage-database');
 
-var dbManager = dbManagerProvider({
+var dbManager = createDbManager({
   user: 'username',
   password: 'password',
   host: 'localhost',
