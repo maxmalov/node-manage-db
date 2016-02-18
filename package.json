@@ -26,6 +26,7 @@
     "eslint": "^2.1.0"
   },
   "dependencies": {
+    "bluebird": "^3.3.1",
     "mysql": "^2.10.2",
     "pg": "^4.4.6"
   }

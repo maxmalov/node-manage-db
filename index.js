@@ -1,6 +1,7 @@
 'use strict';
 
 var join = require('path').join;
+var P = require('bluebird');
 
 var DIALECTS = ['postgres', 'mysql'];
 
@@ -13,5 +14,6 @@ module.exports = function (opts) {
   }
 
   provider = require('./' + join('lib', dialect));
-  return provider(opts);
+
+  return P.promisifyAll(provider(opts));
 };

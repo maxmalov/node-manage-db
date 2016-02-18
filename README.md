@@ -31,6 +31,15 @@ dbMgr.create('database_name', function (err) {
   console.log('database created');
 });
 
+// or promisified version
+dbMgr.createAsync('database_name')
+  .then(function () {
+    console.log('database created');
+  })
+  .catch(function (err) {
+    console.error(err);
+  });
+
 // drop database
 dbMgr.drop('database_name', function (err) {
   if (err) {
@@ -40,6 +49,15 @@ dbMgr.drop('database_name', function (err) {
   console.log('database deleted');
 });
 ```
+
+// or promisified version
+dbMgr.dropAsync('database_name')
+  .then(function () {
+    console.log('database deleted');
+  })
+  .catch(function (err) {
+    console.error(err);
+  });
 
 ### Options
 
