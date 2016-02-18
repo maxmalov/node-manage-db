@@ -48,7 +48,7 @@ dbMgr.drop('database_name', function (err) {
   }
   console.log('database deleted');
 });
-```
+
 
 // or promisified version
 dbMgr.dropAsync('database_name')
@@ -58,6 +58,7 @@ dbMgr.dropAsync('database_name')
   .catch(function (err) {
     console.error(err);
   });
+```
 
 ### Options
 
