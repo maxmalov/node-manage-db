@@ -12,6 +12,10 @@
     "postgres",
     "mysql"
   ],
+  "scripts": {
+    "lint": "eslint ./lib index.js",
+    "lint:fix": "eslint --fix ./lib index.js"
+  },
   "author": "Maxim Malov <m.malov.v@gmail.com>",
   "license": "The MIT License (MIT)",
   "bugs": {
@@ -19,8 +23,10 @@
   },
   "homepage": "https://github.com/maxmalov/node-manage-db",
   "devDependencies": {
-    "gulp": "^3.8.9",
-    "gulp-jshint": "^1.8.5",
-    "jshint-stylish": "^1.0.0"
+    "eslint": "^2.1.0"
+  },
+  "dependencies": {
+    "mysql": "^2.10.2",
+    "pg": "^4.4.6"
   }
 }
