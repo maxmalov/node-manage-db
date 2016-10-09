@@ -3,7 +3,7 @@ Manage databases with NodeJS
 
 ## Installation
 
-```
+```sh
 npm i manage-database
 ```
 
@@ -11,7 +11,7 @@ npm i manage-database
 
 Module exports a provider function for database manager.
 
-```
+```js
 var createDbManager = require('manage-database');
 
 var dbManager = createDbManager({
@@ -60,27 +60,27 @@ dbMgr.dropAsync('database_name')
   });
 ```
 
-### Options
+## Options
 
-###### {string} opts.user
+ ` {string} opts.user `
 
-User name in the database
+### User name in the database
 
-###### {string=} opts.password
+ ` {string=} opts.password `
 
-User password in the database
+### User password in the database
 
-###### {string=}[host='127.0.0.1'] opts.host
+`{string=}[host='127.0.0.1'] opts.host`
 
-The host name or ip where database server is available
+### The host name or ip where database server is available
 
-###### {number=} opts.port
+ ` {number=} opts.port `
 
-The port where database server is available
+### The port where database server is available
 
-###### {string} opts.dialect
+ ` {string} opts.dialect `
 
-Database dialect. Available options are `postgres`, `mysql`. By default it is `mysql`.
+### Database dialect. Available options are `postgres`, `mysql`. By default it is `mysql`.
 
 ## License
 
