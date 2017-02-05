@@ -62,25 +62,15 @@ dbMgr.dropAsync('database_name')
 
 ## Options
 
- ` {string} opts.user `
+`opts.user` - User name in the database
 
-### User name in the database
-
- ` {string=} opts.password `
-
-### User password in the database
-
-`{string=}[host='127.0.0.1'] opts.host`
-
-### The host name or ip where database server is available
-
- ` {number=} opts.port `
-
-### The port where database server is available
-
- ` {string} opts.dialect `
-
-### Database dialect. Available options are `postgres`, `mysql`. By default it is `mysql`.
+`opts.password` - User password in the database
+ 
+`opts.host` - The host name or ip where database server is available. By default it is 127.0.0.1
+ 
+`opts.port` - The port where database server is available
+ 
+`opts.dialect` - Database dialect. Available options are `postgres`, `mysql`. By default it is `mysql`.
 
 ## License
 
